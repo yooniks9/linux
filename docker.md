@@ -30,7 +30,7 @@
 ```docker-sync clean```
 ##### Due to file system issues, docker mount are extremely slow on MacOS / Windows, We need to host the File services with Unison
 ```docker-sync start```
-##### Start Docker-compose
+##### Start Docker-compose [read-more](https://docs.docker.com/compose/install/#install-compose)
 ```docker-compose up -d```
 ##### Start Docker-compose with specify config file other than docker-compose.yml
 ```docker-compose -f docker-compose-prod.yml up -d```
