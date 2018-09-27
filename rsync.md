@@ -7,3 +7,7 @@
 ## rsync with pem key authenication, Copy your id_rsa.pub into /home/$USER/.ssh/authorized_keys
 
 `rsync -rave "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i /home/$USER/KEY.pem" root@$IPADDRESS:$SOURCE/ $DESTINAION/`
+
+## rsync with show progression
+
+`rsync -avzh --progress $SOURCE/. $USERNAME@$IPADDRESS:$DESTINAION/.`
