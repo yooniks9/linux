@@ -1,10 +1,10 @@
 ## chmod recursively 
 
 ### Files
-`sudo find . -type f -exec chmod 664 {} +`
+`sudo find /var/www -type f -exec chmod 664 {} +`
 
 ### Directories
-`sudo find . -type d -exec chmod 775 {} +`
+`sudo find /var/www -type d -exec chmod 775 {} +`
 
 ### Read default folder Permission
 `sudo getfacl /var/www`
